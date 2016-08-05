@@ -1,15 +1,15 @@
 #!/usr/bin/python
-
 from turtle import *
 
-def Square(_size=20,_sizeb=300) :
+
+def Square(_size=20) :
 	forward(_size)
-  left(90)
-	forward(_sizeb)
+	left(90)
+	forward(_size)
 	left(90)
 	forward(_size)
 	left(90)
-	forward(_sizeb)
+	forward(_size)
 
 
 penup()
@@ -20,8 +20,7 @@ pendown()
 this is a big comment
 
 """
-Square(_sizeb=10)
-
+Square(10)
 
 penup()
 goto(50,200)

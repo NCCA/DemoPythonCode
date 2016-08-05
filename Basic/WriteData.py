@@ -20,7 +20,7 @@ def main(argv=None):
 		Num=int(sys.argv[2])
 		# try to open the file
 		try :
-			FILE=open(FileName,"wb")
+			FILE=open(FileName,"w")
 		# if this fails catch the error and exit
 		except IOError :
 			print "Error opening file",FileName

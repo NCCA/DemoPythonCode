@@ -10,10 +10,10 @@ def multiReturn(_data) :
 
 data=["test","values"]
 
-a,b,c=multiReturn(data)
-print a
-print b
-print c
+x,y,z=multiReturn(data)
+print x
+print y
+print z
 
 
 

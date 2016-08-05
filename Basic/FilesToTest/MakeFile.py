@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import os
-Name="Test.%03d.exr"
+Name="Test.%03d.png"
 
 for i in range(0,20) :
 	file=Name %(i)

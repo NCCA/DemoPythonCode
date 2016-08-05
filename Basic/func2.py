@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 
-def foo(_data) :
-	print "foo ",_data
+def foo(data) :
+	print "foo ",data
 
 def bar(_data) :
 	print "bar ",_data
