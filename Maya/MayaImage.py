@@ -12,9 +12,9 @@
 # print img.getPixel(20,30)
 # print img.getRGB(20,50)
 ########################################
+import sys
 
 import maya.OpenMaya as om
-import sys
 
 class MayaImage :
 	""" The main class, needs to be constructed with a filename """
@@ -26,21 +26,21 @@ class MayaImage :
 		self.image.readFromFile(filename)
 		# as the MImage class is a wrapper to the C++ module we need to access data
 		# as pointers, to do this use the MScritUtil helpers
-		self.scriptUtilWidth = om.MScriptUtil()
-		self.scriptUtilHeight = om.MScriptUtil()
+		scriptUtilWidth = om.MScriptUtil()
+		scriptUtilHeight = om.MScriptUtil()
 
 		# first we create a pointer to an unsigned in for width and height
-		widthPtr = self.scriptUtilWidth.asUintPtr()
-		heightPtr = self.scriptUtilHeight.asUintPtr()
+		widthPtr = scriptUtilWidth.asUintPtr()
+		heightPtr = scriptUtilHeight.asUintPtr()
 		# now we set the values to 0 for each
-		self.scriptUtilWidth.setUint( widthPtr, 0 )
-		self.scriptUtilHeight.setUint( heightPtr, 0 )
+		scriptUtilWidth.setUint( widthPtr, 0 )
+		scriptUtilHeight.setUint( heightPtr, 0 )
 		# now we call the MImage getSize method which needs the params passed as pointers
 		# as it uses a pass by reference
 		self.image.getSize( widthPtr, heightPtr )
 		# once we get these values we need to convert them to int so use the helpers
-		self.m_width = self.scriptUtilWidth.getUint(widthPtr)
-		self.m_height = self.scriptUtilHeight.getUint(heightPtr)
+		self.m_width = scriptUtilWidth.getUint(widthPtr)
+		self.m_height =scriptUtilHeight.getUint(heightPtr)
 		# now we grab the pixel data and store
 		self.charPixelPtr = self.image.pixels()
 		# query to see if it's an RGB or RGBA image, this will be True or False

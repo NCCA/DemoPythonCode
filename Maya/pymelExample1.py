@@ -9,6 +9,6 @@ print 'The sphere radius =',radius
 
 # modify the radius
 print 'Increment the sphere\'s radius by one unit'
-cmds.sphere('Sphere1', edit=True, radius=radius+1)
-radius = cmds.sphere('Sphere1', query=True, radius=True)
+pm.sphere('Sphere1', edit=True, radius=radius+1)
+radius = pm.sphere('Sphere1', query=True, radius=True)
 print 'The new sphere radius =', radius

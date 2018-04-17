@@ -14,6 +14,8 @@ class Colour :
 		print '[%f,%f,%f,%f]' %(self.r,self.g,self.b,self.a)
 
 
+
+
 	def mix(self,colour,t) :
 		'''method to mix current colour with another by t
 		will catch the attribute error and pass back black if
