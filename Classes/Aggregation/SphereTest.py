@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
-from Sphere import Point3,Colour,Sphere
-
+from Sphere import Point3,Colour,Sphere,Ellipse
 
 #Pos, colour, radius,name
 s1=Sphere(Point3(3,0,0),Colour(1,0,0,1),2,"Sphere1")
@@ -15,3 +14,6 @@ s2.Print()
 
 s3=Sphere(Point3(3,0,2),Colour(1,0,1,1),2,"Sphere2")
 s3.Print()
+
+e1=Ellipse()
+e1.Print()

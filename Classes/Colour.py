@@ -10,11 +10,9 @@ class Colour :
 		self.a=a
 		
 	def debugprint(self) :
+		
 		' method to print out the colour data for debug'
 		print '[%f,%f,%f,%f]' %(self.r,self.g,self.b,self.a)
-
-
-
 
 	def mix(self,colour,t) :
 		'''method to mix current colour with another by t

@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-#!/usr/bin/python
-
 import sys
 import argparse
 import inspect
@@ -16,7 +14,6 @@ def main(shadingrate=10,pixelvar=0.1,
 
 
 if __name__ == '__main__':
-	parser=argparse.ArgumentParser()
 	parser = argparse.ArgumentParser(description='Modify render parameters')
 
 	parser.add_argument('--shadingrate', '-s', nargs='?', 

@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-from turtle import *
-
-forward(200)
-left(90)
-forward(200)
-left(90)
-forward(200)
-left(90)
-forward(200)
-done()
+#from turtle import *
+import turtle as tl
+tl.forward(200)
+tl.left(90)
+tl.forward(200)
+tl.left(90)
+tl.forward(200)
+tl.left(90)
+tl.forward(200)
+tl.done()

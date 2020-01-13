@@ -2,14 +2,14 @@
 from turtle import *
 
 
-def Square(_size=20) :
-	forward(_size)
+def Square(size=20) :
+	forward(size)
 	left(90)
-	forward(_size)
+	forward(size)
 	left(90)
-	forward(_size)
+	forward(size)
 	left(90)
-	forward(_size)
+	forward(size)
 
 
 penup()

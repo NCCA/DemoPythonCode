@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+from __future__ import print_function
 from turtle import *
 
 def Square(_size) :
@@ -8,7 +8,7 @@ def Square(_size) :
 		left(90)
 
 for x in range(-250,250,40) :
-	print x
+	print( x)
 	goto(x,0)
 	Square(40)
 

@@ -1,9 +1,10 @@
 #!/usr/bin/python
+from __future__ import print_function
 
-def foo( a, b=0, c=0, d=0) :
-	print a,b,c,d
+def defaultArguments( a, b=0, c=0, d=0) :
+	print('a={} b={} c={} d={}'.format(a,b,c,d) )
 	
-foo(3)
-foo(c=9,a=2)
-foo(1,2,3,4)
-foo()
+defaultArguments(3)
+defaultArguments(c=9,a=2)
+defaultArguments(1,2,3,4)
+defaultArguments()

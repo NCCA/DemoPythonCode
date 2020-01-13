@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+from __future__ import print_function
 
 def multiReturn(_data) :
 	a=_data*1
@@ -11,9 +11,9 @@ def multiReturn(_data) :
 data=["test","values"]
 
 x,y,z=multiReturn(data)
-print x
-print y
-print z
+print( x )
+print( y )
+print( z )
 
 
 

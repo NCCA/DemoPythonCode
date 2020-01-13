@@ -3,7 +3,7 @@ from Colour import Colour
 
 
 
-class Sphere:
+class Sphere :
 	# ctor to assign values
 	def __init__(self, pos=Point3(), colour=Colour(), radius=1,name=""):
 		self.pos=pos
@@ -20,6 +20,11 @@ class Sphere:
 		print self.pos
 
 
+
+class Ellipse :	
+
+	def Print(self) :
+		print "elipse"
 
 
 

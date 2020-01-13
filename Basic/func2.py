@@ -1,14 +1,15 @@
 #!/usr/bin/python
+from __future__ import print_function 
 
 
-def foo(data) :
-	print "foo ",data
+def function1(data) :
+	print('function 1 called with {}'.format(data))
 
-def bar(_data) :
-	print "bar ",_data
+def function2(data) :
+	print('function 2 called with {}'.format(data))
 
 
-functions=[foo,bar]
+functions=[function1,function2]
 
 functions[0](12)
 functions[1](12)
