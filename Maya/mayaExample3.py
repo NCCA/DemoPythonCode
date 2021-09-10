@@ -1,4 +1,4 @@
-# let's create a sphere
+from __future__ import print_function,division
 import maya.cmds as cmds
 
 # lets delete all objects
