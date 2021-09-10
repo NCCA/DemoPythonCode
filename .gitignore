@@ -43,3 +43,7 @@
 *.pyc
 #images
 *.exr
+
+__pycache__
+__pycahce__/*
+.pytest
